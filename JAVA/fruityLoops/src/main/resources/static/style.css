@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+table{
+	margin:auto;
+	width: 700px;
+	border: 30px solid lightpink;
+	height: 300px;
+	
+}
+td{
+	border: 1px solid lightpink;
+}
+
+.hahah{
+	color: lightpink;
+	margin-left: 120px;
+	margin-top: 50px;
+		margin-bottom: 50px;
+
+}

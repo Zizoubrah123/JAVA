@@ -8,6 +8,7 @@ public class BankAccount{
         this.checkingBalance = checkingBalance;
         this.savingsBalance = savingsBalance;
         numberOfAccounts++;
+        this.totalAmount += checkingBalance;
         
     }
 
@@ -29,16 +30,16 @@ public class BankAccount{
         System.out.println("Customer checking balance: $"+ getCheckingBalance());
         System.out.println("Customer saving balance: $"+getSavingBalance());
         System.out.println("================================");
-                System.out.println(totalAmount);
+                System.out.println( "the total amount is : " + totalAmount);
     }
 
     public double withdraw(double balance){
         if (balance > checkingBalance){
-            System.out.println("old insufficient funds.");
+            System.out.println("sold insufficient funds.");
             }
         else if (checkingBalance >= balance){
             this.checkingBalance -= balance;
-            System.out.println("you withdrawed your ammount-:" + balance);
+            System.out.println("you withdrawed your ammount : " + balance);
             return checkingBalance;
         }
         return checkingBalance;
